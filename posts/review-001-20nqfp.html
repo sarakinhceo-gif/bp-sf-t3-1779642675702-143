@@ -24,7 +24,7 @@
     <article>
       <p>제목: 창작한 제목 | Silent Regression Debugging in Llama 3.1</p>
 <p>아, 진짜... 로마 술보다 프로덕션 배포 후 3개월 만에 발견된 silent regression 디버깅은 정말 난관입니다. 이 글을 통해 과거의 경험과 현대적인 해결 방안을 살펴보고자 합니다.</p>
-<h3>소제목<br>1. <strong>RoPE theta 변경: 변화 포착</strong><br>2. **特定 Token 구간의 어텐션 패턴 분석</h3>
+<h3>소제목<br>1. <strong>RoPE theta 변경: 변화 포착</strong><br>2. **특정 Token 구간의 어텐션 패턴 분석</h3>
 <h4>RoPE theta 변경: 변화 포착</h4>
 <p>LLama 3.1 8B 모델에서 RoPE theta 값을 50만에서 5000만으로 올렸습니다. 이 변화에 따른 Perplexity 값의 변동을 살펴보겠습니다.</p>
 <p>##### 실패 원인 분석<br>- 기존 코드는 RoPE theta 값을 정확히 조절하는 과정이 불충분했습니다.<br>- 임베딩 차원과 모델 크기에 대한 이해 부족으로 인해, RoPE theta 값의 효과가 예상보다 작다는 결론을 도출해야 했습니다.</p>
